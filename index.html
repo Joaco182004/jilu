@@ -1,64 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flores de San Valentín</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #ffebf2;
-        }
-        .flower {
-            position: relative;
-            width: 50px;
-            height: 50px;
-            background: red;
-            border-radius: 50%;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-        }
-        .flower::before, .flower::after {
-            content: '';
-            position: absolute;
-            width: 50px;
-            height: 50px;
-            background: red;
-            border-radius: 50%;
-        }
-        .flower::before {
-            top: -30px;
-            left: 10px;
-        }
-        .flower::after {
-            top: 10px;
-            left: -30px;
-        }
-        .stem {
-            position: absolute;
-            width: 10px;
-            height: 100px;
-            background: green;
-            bottom: -100px;
-            left: 20px;
-        }
-        .leaf {
-            position: absolute;
-            width: 30px;
-            height: 20px;
-            background: green;
-            border-radius: 50%;
-            bottom: -60px;
-            left: -10px;
-        }
-    </style>
+    <title>Happy Valentine's Day!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="flower">
-        <div class="stem"></div>
-        <div class="leaf"></div>
+    <div class="container">
+        <h1>Happy Valentine's Day!</h1>
+        <div class="heart" id="heart"></div>
+        <p>Spread love and joy!</p>
+        <button id="animateButton">Make it Sparkle!</button>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
